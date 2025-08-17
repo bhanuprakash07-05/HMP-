@@ -1,0 +1,20 @@
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.bg-light-primary {
+  background-color: #dbeafe; /* Light blue */
+}
+
+.bg-light-purple {
+  background-color: #f3e8ff; /* Light purple */
+}
+
+.bg-light-success {
+  background-color: #dcfce7; /* Light green */
+}
