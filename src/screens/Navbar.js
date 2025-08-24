@@ -29,14 +29,14 @@ const NavbarComponent = () => {
       </div>
 
       {/* Main Navbar */}
-      <BSNavbar expand="lg" className="bg-white shadow-sm sticky-top">
+      <BSNavbar expand="xl" className="bg-white shadow-sm sticky-top">
         <Container fluid>
           {/* Brand */}
           <BSNavbar.Brand href="#" className="d-flex align-items-center">
             <img
               src="/logo.jpg"
               alt="HSP Technologies"
-              height="50"
+              height="100"
               className="me-2"
             />
             <div>

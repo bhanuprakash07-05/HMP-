@@ -9,7 +9,7 @@ import Footer from "./screens/Footer";
 const HomePage = () => {
   return (
     <>
-      <NavbarComponent />
+      {/* <NavbarComponent /> */}
       <Home />
       <MissionVisionValues />
       <Services />

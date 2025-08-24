@@ -43,3 +43,74 @@
 .dotsize{
     font-size: 25px;
 }
+
+@media (max-width: 1024px) {
+  .navbar-expand-xl .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-expand-xl .navbar-toggler {
+    display: block !important;
+  }
+}
+
+
+.card-with-bg {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-with-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);   /* 🔥 blur effect */
+  z-index: 0;
+}
+
+/* Specific backgrounds */
+.bg-journal::before {
+  background-image: url("../assets/journal.png");
+}
+
+.bg-book::before {
+  background-image: url("../assets/BookChaptersPublication.png");
+}
+
+.bg-conference::before {
+  background-image: url("../assets/ConferencePublicationServices.png");
+}
+
+.bg-textbook::before {
+  background-image: url("../assets/TextbookPublicationServices.png");
+}
+
+.bg-patent::before {
+  background-image: url("../assets/patent.png");
+}
+
+.bg-funding::before {
+  background-image: url("../assets/funding.png");
+}
+
+.bg-writing::before {
+  background-image: url("../assets/writing.png");
+}
+
+.bg-membership::before {
+  background-image: url("../assets/membership.png");
+}
+
+/* Keep content clear */
+.card-with-bg .service-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.2); /* optional glass look */
+  border-radius: 16px;
+}
+
