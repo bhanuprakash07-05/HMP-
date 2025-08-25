@@ -7,6 +7,7 @@ import HomePage from "./HomePage";
 import Details from "./screens/Details";    
 import Services from "./screens/Services";
 import Footer from "../src/screens/Footer";
+import HSPJournal from "./screens/HspJournal";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/Footer" element={<Footer />} />
+        <Route path="/HSPJournal" element={<HSPJournal />} />
         
 
       </Routes>

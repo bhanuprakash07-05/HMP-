@@ -1,0 +1,64 @@
+.journal-btn {
+  background: linear-gradient(to right, #1e40af, #9333ea);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 20px;
+  border: none;
+  font-size: 25px;
+  height: 60px;
+  width: 250px;
+}
+
+/* .navbar-nav .nav-link {
+  font-weight: 600;
+  margin: 0 10px;
+} */
+
+.card {
+  border-radius: 12px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.bg-purple {
+  background-color: #9333ea !important;
+}
+
+
+
+
+.custom-navbar {
+  background-color: #2563eb; /* same blue as screenshot */
+  padding: 10px 0;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.custom-navbar .nav-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.custom-navbar .nav-item:last-child {
+  border-right: none;
+}
+
+.custom-navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}

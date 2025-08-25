@@ -58,3 +58,22 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+
+
+
+/* Force Technologies to drop below HSP in small screens */
+/* Mobile view: force Technologies below HSP */
+@media (max-width: 375px) {
+  .brand-text {
+    display: flex;
+    flex-direction: column; /* Stack HSP and Technologies */
+    line-height: 1.2;
+  }
+
+  .brand-break {
+    display: block !important; /* Always on new line */
+    margin-top: 2px;
+  }
+}
+

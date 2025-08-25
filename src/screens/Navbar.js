@@ -40,24 +40,17 @@ const NavbarComponent = () => {
               className="me-2"
             />
             <div>
-              <div className="fw-bold lh-sm">
-                <span onClick={(e) => { 
-                      e.preventDefault(); // prevents page reload
-                      navigate("/HomePage"); 
-                    }}>
-                    HSP <br className="d-none d-lg-block" /> Technologies
-                  </span>
-                </div>
-              <small className="text-muted d-none d-sm-block">
-                 <span>
-                    Research & Academic <br className="d-none d-lg-block" /> Services
-                  </span>
-              </small>
-            </div>
+        <div className="fw-bold lh-sm brand-text">
+          HSP <span className="brand-break">Technologies</span>
+        </div>
+        <small className="text-muted d-none d-sm-block">
+          Research & Academic <br className="d-none d-lg-block" /> Services
+        </small>
+      </div>
           </BSNavbar.Brand>
 
           {/* Toggler */}
-          <BSNavbar.Toggle aria-controls="navbar-nav" />
+          <BSNavbar.Toggle aria-controls="navbar-nav" className=" ms-auto border-0" />
 
           {/* Nav Links */}
           <BSNavbar.Collapse id="navbar-nav">
@@ -189,3 +182,19 @@ const NavbarComponent = () => {
   );
 };
 export default NavbarComponent;
+
+
+
+
+
+
+
+
+
+
+// <span onClick={(e) => { 
+//                       e.preventDefault(); // prevents page reload
+//                       navigate("/HomePage"); 
+//                     }}>
+//                     HSP <br className="d-none d-lg-block" /> Technologies
+//                   </span>

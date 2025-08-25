@@ -42,7 +42,8 @@
 }
 
 .hero-img {
-  max-width: 350px;
+  max-width: 600px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }

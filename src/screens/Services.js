@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Services.css";
+import { LinkContainer } from "react-router-bootstrap";
 // import journalBg from "../public/images/journal.png"; 
 
 const Services = () => {
@@ -16,7 +17,7 @@ const Services = () => {
 
         <div className="row g-4">
           {/* Journal Publication Services */}
-          <div className="col-md-4 card-with-bg bg-journal" >
+          <div className="col-md-4" >
             <div className="service-card h-100 text-start">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle blue d-flex align-items-center justify-content-center">
@@ -38,7 +39,7 @@ const Services = () => {
           </div>
 
           {/* Book Chapters Publication */}
-          <div className="col-md-4 card-with-bg bg-book">
+          <div className="col-md-4">
             <div className="service-card h-100 text-start">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle purple d-flex align-items-center justify-content-center">
@@ -46,7 +47,7 @@ const Services = () => {
                 </div>
               </div>
               <h5 className="fw-bold">Book Chapters Publication</h5>
-              <ul className="list-unstyled mt-3 ulsize text-light">
+              <ul className="list-unstyled mt-3 ulsize">
                 <li><span className="text-primary dotsize">•</span> Scopus and WOS (ESCI) Indexed Book Series Publications</li>
                 <li><span className="text-primary dotsize">•</span> Scopus and WOS (ESCI) Indexed Lecture Notes Publications</li>
               </ul>
@@ -54,7 +55,7 @@ const Services = () => {
           </div>
 
           {/* Conference Publication Services */}
-          <div className="col-md-4 card-with-bg bg-conference">
+          <div className="col-md-4">
             <div className="service-card h-100 text-start">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle green d-flex align-items-center justify-content-center">
@@ -62,7 +63,7 @@ const Services = () => {
                 </div>
               </div>
               <h5 className="fw-bold">Conference Publication Services</h5>
-              <ul className="list-unstyled mt-3 ulsize text-light">
+              <ul className="list-unstyled mt-3 ulsize">
                 <li><span className="text-primary dotsize">•</span> Scopus and WOS (ESCI) Indexed Proceedings</li>
                 <li><span className="text-primary dotsize">•</span> Scopus Indexed Conference Proceedings Publications</li>
               </ul>
@@ -70,7 +71,7 @@ const Services = () => {
           </div>
 
           {/* Textbook Publication Services */}
-          <div className="col-md-4 card-with-bg bg-textbook">
+          <div className="col-md-4">
             <div className="service-card h-100 text-start">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle bg-warning d-flex align-items-center justify-content-center ">
@@ -81,17 +82,19 @@ const Services = () => {
               <ul className="list-unstyled ms-2 ulsize">
                 <li className="mb-2"><span className="text-primary dotsize">•</span> National Publishers Support</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> International Publishers Support</li>
-                <li className="mb-2"><span className="text-primary dotsize">•</span> 
-                  <a href="#" className="text-decoration-none fw-semibold">
-                    HSP Books Publishing House →
-                  </a>
-                </li>
+                <LinkContainer to="/Hsp_books">
+                  <li className="mb-2"><span className="text-primary dotsize">•</span> 
+                    <a href="#" className="text-decoration-none fw-semibold">
+                      HSP Books Publishing House →
+                    </a>
+                  </li>
+               </LinkContainer>
               </ul>
             </div>
           </div>
 
           {/* Patent and Copyright Services */}
-          <div className="col-md-4 card-with-bg bg-patent">
+          <div className="col-md-4">
             <div className="service-card h-100 text-start">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle bg-danger d-flex align-items-center justify-content-center">
@@ -99,7 +102,7 @@ const Services = () => {
                 </div>
               </div>
               <h5 className="card-title mb-0 fw-bold">Patent and Copyright Services</h5>
-              <ul className="list-unstyled ms-2 ulsize pt-3 text-light">
+              <ul className="list-unstyled ms-2 ulsize pt-3">
                 <li className="mb-2"><span className="text-primary dotsize">•</span> Indian Utility Patent Publications</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> Indian Design Patent Publications</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> Indian Design Patent Grant Publications</li>
@@ -110,7 +113,7 @@ const Services = () => {
           </div>
 
           {/* Funding Proposal Services */}
-          <div className="col-md-4 card-with-bg bg-funding">
+          <div className="col-md-4">
             <div className="service-card h-100 text-start">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle bg-primary d-flex align-items-center justify-content-center">
@@ -118,7 +121,7 @@ const Services = () => {
                 </div>
               </div>
               <h5 className="card-title mb-0 fw-bold">Funding Proposal Services</h5>
-              <ul className="list-unstyled ms-2 ulsize pt-3 text-light">
+              <ul className="list-unstyled ms-2 ulsize pt-3">
                 <li className="mb-2"><span className="text-primary dotsize">•</span> AICTE SPONSORED RESEARCH SCHEMES Assistance</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> DST SPONSORED RESEARCH SCHEMES Assistance</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> SERB SPONSORED RESEARCH SCHEMES Assistance</li>
@@ -131,8 +134,70 @@ const Services = () => {
             </div>
           </div>
 
+          {/*Conference Services */}
+          <div className="col-md-4">
+            <div className="service-card h-100 text-start">
+              <div className="mb-3 text-start d-flex align-items-center">
+                <div className="icon-circle green d-flex align-items-center justify-content-center">
+                  <i className="bi bi-calendar-event"></i>
+                </div>
+              </div>
+              <h5 className="fw-bold">Conference Services</h5>
+              <ul className="list-unstyled mt-3">
+                <li><span className="text-primary">•</span> Scopus Indexed Conference Assistance</li>
+                <li><span className="text-primary">•</span> Non Scopus Indexed Conference Assistance</li>
+              </ul>
+            </div>
+          </div>
+
+          {/*HSP Journal Services */}
+         <div className="col-md-4">
+            <div className="service-card h-100 text-start">
+              <div className="mb-3 text-start d-flex align-items-center">
+                <div className="icon-circle purple d-flex align-items-center justify-content-center">
+                  <i className="bi bi-file-earmark-text"></i>
+                </div>
+              </div>
+              <h5 className="fw-bold">HSP Journal Services</h5>
+              <ul className="list-unstyled mt-3">
+                <LinkContainer to="/HspJournal">
+                <li>
+                  <span className="text-primary">•</span>{" "}
+                  <a href="#" className="text-decoration-none fw-semibold">
+                    International Journal of Engineering, Technology and Management Sciences →
+                  </a>
+                </li>
+                </LinkContainer>
+              </ul>
+            </div>
+          </div>
+
+
+          {/*Admission Services */}
+          <div className="col-md-4">
+            <div className="service-card h-100 text-start">
+              <div className="mb-3 text-start d-flex align-items-center">
+                <div className="icon-circle blue d-flex align-items-center justify-content-center">
+                  <i className="bi bi-house-door"></i>
+                </div>
+              </div>
+              <h5 className="fw-bold">Admission Services</h5>
+              <ul className="list-unstyled mt-3">
+                <li><span className="text-primary">•</span> B.Tech</li>
+                <li><span className="text-primary">•</span> M.Tech</li>
+                <li><span className="text-primary">•</span> PhD</li>
+                <li><span className="text-primary">•</span> LLB</li>
+                <li><span className="text-primary">•</span> Diploma</li>
+                <li><span className="text-primary">•</span> Any Degree</li>
+                <li><span className="text-primary">•</span> Post Doctoral Fellowship</li>
+                <li><span className="text-primary">•</span> Master of Business Administration</li>
+              </ul>
+            </div>
+          </div>
+
+
           {/* Writing Services */}
-          <div className="col-md-6 card-with-bg bg-writing">
+          <div className="col-md-6">
             <div className="service-card h-100 text-start shadow-lg rounded-4 p-4">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle bg-warning d-flex align-items-center justify-content-center">
@@ -152,7 +217,7 @@ const Services = () => {
           </div>
 
           {/* Membership Services */}
-          <div className="col-md-6 card-with-bg bg-membership">
+          <div className="col-md-6">
             <div className="service-card h-100 text-start shadow-lg rounded-4 p-4">
               <div className="mb-3 text-start d-flex align-items-center">
                 <div className="icon-circle bg-success d-flex align-items-center justify-content-center">
@@ -160,7 +225,7 @@ const Services = () => {
                 </div>
               </div>
               <h5 className="card-title mb-0 fw-bold">Membership Services</h5>
-              <ul className="list-unstyled ms-2 pt-2 text-light">
+              <ul className="list-unstyled ms-2 pt-2">
                 <li className="mb-2"><span className="text-primary dotsize">•</span> IEEE Membership Assistance</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> ISTE Membership Assistance</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> IETE Membership Assistance</li>

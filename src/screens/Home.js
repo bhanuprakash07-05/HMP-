@@ -24,14 +24,14 @@ const Home = () => {
             <h1 className="fw-bold mb-3 hero-title">
               Premier Academic Research & Publication Services
             </h1>
-            <p className="mb-4 hero-subtext">
+            <p className="mb-3 hero-subtext">
               Empowering researchers and academics with comprehensive publication,
               patent, and funding proposal services. Your trusted partner in academic
               excellence since inception.
             </p>
 
             {/* Buttons */}
-            <div className="mb-5 button-group">
+            <div className="mb-3 button-group">
               {/* <LinkContainer to ="/Details"> */}
                 <button className="btn btn-light btn-rounded" onClick={() => navigate("/Details")}>Get Started Today</button>
               {/* </LinkContainer> */}
