@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Footer.css";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -38,7 +40,9 @@ const Footer = () => {
         >
           <h4>Quick Links</h4>
           <ul>
-            <li>Home</li>
+            <li>
+               Home
+            </li>
             <li>About Us</li>
             <li>Services</li>
             <li>Journal Publications</li>

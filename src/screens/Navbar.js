@@ -41,7 +41,10 @@ const NavbarComponent = () => {
             />
             <div>
               <div className="fw-bold lh-sm">
-                <span>
+                <span onClick={(e) => { 
+                      e.preventDefault(); // prevents page reload
+                      navigate("/HomePage"); 
+                    }}>
                     HSP <br className="d-none d-lg-block" /> Technologies
                   </span>
                 </div>
@@ -59,7 +62,11 @@ const NavbarComponent = () => {
           {/* Nav Links */}
           <BSNavbar.Collapse id="navbar-nav">
             <Nav className="ms-auto fw-semibold text-center text-lg-start">
-              <Nav.Link href="#">HOME</Nav.Link>
+              <Nav.Link href="#" onClick={(e) => { 
+                    e.preventDefault(); // prevents page reload
+                    navigate("/HomePage"); 
+                  }}>HOME
+                </Nav.Link>
 
               <NavDropdown
                 title={

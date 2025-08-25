@@ -78,7 +78,7 @@ const Services = () => {
                 </div>
               </div>
               <h5 className="card-title mb-0 fw-bold">Textbook Publication Services</h5>
-              <ul className="list-unstyled ms-2 ulsize pt-3 text-light">
+              <ul className="list-unstyled ms-2 ulsize">
                 <li className="mb-2"><span className="text-primary dotsize">•</span> National Publishers Support</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> International Publishers Support</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> 
@@ -140,7 +140,7 @@ const Services = () => {
                 </div>
               </div>
               <h5 className="card-title mb-0 fw-bold">Writing Services</h5>
-              <ul className="list-unstyled ms-2 pt-2 text-light">
+              <ul className="list-unstyled ms-2">
                 <li className="mb-2"><span className="text-primary dotsize">•</span> Article Writing Support</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> Synopsis Writing Support</li>
                 <li className="mb-2"><span className="text-primary dotsize">•</span> Thesis Writing Support</li>

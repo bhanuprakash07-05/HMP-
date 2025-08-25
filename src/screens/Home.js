@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css';
 import CountUp from 'react-countup';
+import { LinkContainer } from 'react-router-bootstrap';
+import { useNavigate } from "react-router-dom";
 
 const statsData = [
   { icon: "fas fa-book", end: 1000, label: "Publications" },
@@ -10,6 +12,7 @@ const statsData = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <section className="hero-section text-white">
       <div className="container">
@@ -29,8 +32,12 @@ const Home = () => {
 
             {/* Buttons */}
             <div className="mb-5 button-group">
-              <button className="btn btn-light btn-rounded">Get Started Today</button>
-              <button className="btn btn-outline-light btn-rounded">Explore Services</button>
+              {/* <LinkContainer to ="/Details"> */}
+                <button className="btn btn-light btn-rounded" onClick={() => navigate("/Details")}>Get Started Today</button>
+              {/* </LinkContainer> */}
+              {/* <LinkContainer to ="/Services"> */}
+                <button className="btn btn-outline-light btn-rounded" onClick={() => navigate("/Services")}>Explore Services</button>
+              {/* </LinkContainer> */}
             </div>
           </div>
 

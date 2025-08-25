@@ -63,9 +63,11 @@
 .card-with-bg::before {
   content: "";
   position: absolute;
+  margin: 10px;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 5%;
+  width: calc(100% - 30px);
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -87,7 +89,7 @@
 }
 
 .bg-textbook::before {
-  background-image: url("../assets/TextbookPublicationServices.png");
+  background-image: url("../assets/im3.jpeg");
 }
 
 .bg-patent::before {
@@ -99,7 +101,7 @@
 }
 
 .bg-writing::before {
-  background-image: url("../assets/writing.png");
+  background-image: url("../assets/im2.jpeg");
 }
 
 .bg-membership::before {
@@ -112,5 +114,6 @@
   z-index: 1;
   background: rgba(255, 255, 255, 0.2); /* optional glass look */
   border-radius: 16px;
+  
 }
 

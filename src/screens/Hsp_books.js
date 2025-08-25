@@ -4,14 +4,19 @@ import { useNavigate } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 
 function HspBooks() {
-    const Navigate = useNavigate();
+    const navigate = useNavigate();
   return (
     <>
       {/* Top Bar */}
       <div className="topbar">
-       <LinkContainer to="./Home">
-            <a href="#" className="back-link">← Back to Main Site</a>
-        </LinkContainer> 
+       {/* <LinkContainer to="./HomePage"> */}
+            <a href="#" className="back-link" onClick={(e) => { 
+                    e.preventDefault(); // prevents page reload
+                    navigate("/HomePage"); 
+                  }}
+                >← Back to Main Site
+            </a>
+        {/* </LinkContainer>  */}
         <span>📍 Tirupati, Andhra Pradesh, India</span>
         <span>📧 hspbooks@gmail.com</span>
         <span>📞 +91-9150450450</span>

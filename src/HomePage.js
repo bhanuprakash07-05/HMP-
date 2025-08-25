@@ -10,11 +10,11 @@ const HomePage = () => {
   return (
     <>
       {/* <NavbarComponent /> */}
-      <Home />
-      <MissionVisionValues />
-      <Services />
-      <ContactPage />
-      <Footer />
+      <Home id="home" />
+      <MissionVisionValues id="about" />
+      <Services id="services" />
+      <ContactPage id="contact" />
+      {/* <Footer /> */}
     </>
   );
 };
