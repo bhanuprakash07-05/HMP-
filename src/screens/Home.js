@@ -44,7 +44,7 @@ const Home = () => {
           {/* Right Image */}
           <div className="col-md-6 text-center mt-4 mt-md-0">
             <img
-              src= "/hero.png"
+              src= "/hsp_hero.jpg"
               alt="Researcher"
               className="img-fluid hero-img"
             />
